@@ -1,0 +1,166 @@
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  background: $primary-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $secondary-color;
+  clip-path: circle(50% at bottom right);
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  position: relative;
+  max-width: 150px;
+}
+
+header .navigator ul {
+  position: relative;
+  display: flex;
+}
+
+header .navigator ul li {
+  list-style-type: none;
+}
+
+header .navigator ul li a {
+  color: #ffffff;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 19px;
+  margin-left: 100px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .text {
+  position: relative;
+  width: 600px;
+  margin-right: 20px;
+}
+
+.container .text h2 {
+  color: #ffffff;
+  font-size: 3em;
+  margin-bottom: 10px;
+  line-height: 2.5em;
+  font-weight: 700;
+}
+
+.container .text span {
+  font-size: 3.5em;
+  color: $secondary-color;
+  font-weight: 900;
+}
+
+.container .text p {
+  color: #ffffff;
+}
+
+.container .text a {
+  display: inline-block;
+  margin-top: 50px;
+  padding: 10px 25px;
+  background: $secondary-color;
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 1px;
+  border-radius: 40px;
+  transition: 0.3s ease-in-out;
+}
+
+.container .text a:hover {
+  transform: translateY(-20px);
+}
+
+.icons {
+  position: absolute;
+  bottom: 40px;
+  left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons li {
+  list-style: none;
+}
+
+.icons li a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #222222;
+  margin-left: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+}
+
+.icons li a:hover {
+  background: $secondary-color;
+  transform: translateY(-10px);
+}
+
+.icons li a img {
+  transform: scale(0.5);
+  filter: invert(1);
+}
+
+.box-img {
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+}
+
+.box-img img {
+  width: 200px;
+}
+
+.box-img .img1 {
+  transform: rotate(-15deg);
+}
+
+.box-img .img2 {
+  transform: rotate(5deg);
+}
+
+.box-img .img3 {
+  transform: rotate(15deg);
+}
+
+.box-img .img4 {
+  transform: rotate(-15deg);
+}
